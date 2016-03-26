@@ -1,3 +1,5 @@
+# Python Decorators
+
 A common definition of a Python decorator is 'A function that takes a function
 and returns a function.' This is a straight-forward definition, however, it's
 a bit inaccurate. In practice, a Python decorator is actually more flexible
