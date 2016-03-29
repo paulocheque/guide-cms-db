@@ -1,0 +1,15 @@
+{
+    "_publish_status": "draft",
+    "author_name": "durden",
+    "author_real_name": "Luke Lee",
+    "branch": "master",
+    "branches": [],
+    "filename": "article.md",
+    "first_commit": "d3f37fc5eefe728a7317682f0e7abf3698a94a61",
+    "image_url": "https://avatars.githubusercontent.com/u/58063?v=3",
+    "stacks": [
+        "Python"
+    ],
+    "thumbnail_url": null,
+    "title": "Defensive programming with Python"
+}
