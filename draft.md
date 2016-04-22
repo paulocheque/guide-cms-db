@@ -1,8 +1,3 @@
-### Big JS guide to test with by Luke Lee
-- [Read the guide](http://guides-dev.herokuapp.com/other/big-js-guide-to-test-with?status=draft)
-- [Read more from Luke Lee](http://guides-dev.herokuapp.com/author/durden) <img src="https://avatars.githubusercontent.com/u/58063?v=3" width="30" height="30" alt="Luke Lee" />
-- Related to: other
-
 ### testing 1 2 3 by Luke Lee
 - [Read the guide](http://guides-dev.herokuapp.com/other/testing-1-2-3?status=draft)
 - [Read more from Luke Lee](http://guides-dev.herokuapp.com/author/durden) <img src="https://avatars.githubusercontent.com/u/58063?v=3" width="30" height="30" alt="Luke Lee" />
