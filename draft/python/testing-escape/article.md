@@ -1,24 +1,25 @@
 # Testing
 
+
+c
+d
+s
 \b
 \c
 \d
 \s
-\\b
-\\c
-\\d
-\\s
 
 ``` 
+
+c
+d
+s
 \b
 \c
 \d
 \s
-\\b
-\\c
-\\d
-\\s
-abs(x) = egin{dcases*}
-        x & when `x geq 0`\n        -x & otherwise
+abs(x) = \begin{dcases*}
+        x & when `x geq 0`
+        -x & otherwise
         end{dcases*}
 ``` 
