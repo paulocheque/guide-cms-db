@@ -20,7 +20,7 @@
 \\c
 \\d
 \\s
-abs(x) = egin{dcases*}
+abs(x) = \begin{dcases*}
         x & when `x geq 0`
         -x & otherwise
         end{dcases*}
