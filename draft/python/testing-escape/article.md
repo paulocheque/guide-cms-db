@@ -1,24 +1,26 @@
 # Testing
 
-
-c
-d
-s
+\begin
 \b
 \c
 \d
 \s
+\\b
+\\c
+\\d
+\\s
 
-``` 
-
-c
-d
-s
+```
+\begin
 \b
 \c
 \d
 \s
-abs(x) = \begin{dcases*}
+\\b
+\\c
+\\d
+\\s
+abs(x) = egin{dcases*}
         x & when `x geq 0`
         -x & otherwise
         end{dcases*}
