@@ -1,3 +1,8 @@
+### Functional Style Programming using C by Paulo Cheque
+- [Read the guide](http://guides-dev.herokuapp.com/python/functional-style-programming-using-c?status=draft)
+- [Read more from Paulo Cheque](http://guides-dev.herokuapp.com/author/paulocheque) <img src="https://avatars.githubusercontent.com/u/94350?v=3" width="30" height="30" alt="Paulo Cheque" />
+- Related to: Python
+
 ### Guide with escape characters by Paulo Cheque
 - [Read the guide](http://guides-dev.herokuapp.com/python/guide-with-escape-characters?status=draft)
 - [Read more from Paulo Cheque](http://guides-dev.herokuapp.com/author/paulocheque) <img src="https://avatars.githubusercontent.com/u/94350?v=3" width="30" height="30" alt="Paulo Cheque" />
