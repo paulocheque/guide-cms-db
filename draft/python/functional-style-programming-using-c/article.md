@@ -368,7 +368,7 @@ Otherwise (when parameter is already positive), it returns back the
 result exactly same as the parameter. Thus, the function can be written
 as – 
 ``` 
-abs(x) = egin{dcases*}
+abs(x) = \begin{{dcases*}
         x & when `x geq 0`\n        -x & otherwise
         end{dcases*}
 ``` 
@@ -378,7 +378,7 @@ compute based on conditions of parameters.
 The general idea of a conditional function is as follows –
 
 ``` 
-f(x) = egin{dcases*}
+f(x) = \begin{{dcases*}
         e_1 & when `1^{st}` condition satisfies\n        e_2 & when `2^{nd}` condition satisfies\n        e_3 & when `3^{rd}` condition satisfies\n        dots & dots \n        e_n & otherwise
         end{dcases*}
 ``` 
@@ -407,7 +407,7 @@ Now we will present some functions those use conditions.
 ### Absolute
 
 ``` 
-abs(x) = egin{dcases*}
+abs(x) = \begin{{dcases*}
         x & when `x geq 0`\n        -x & otherwise
         end{dcases*}
 ``` 
@@ -424,7 +424,7 @@ It's code:
 ### Filter
 
 ``` 
-filter_{LT}(x,y) = egin{dcases*}
+filter_{LT}(x,y) = \begin{{dcases*}
         x & when `x geq y`\n        0 & otherwise
         end{dcases*}
 ``` 
@@ -447,7 +447,7 @@ do it.
 
 Here the function <span>*abs*</span> is rewritten as –
 ``` 
-switcher(a,b,c,d) = egin{dcases*}
+switcher(a,b,c,d) = \begin{{dcases*}
         c & when `a geq b`\n        d & otherwise
         end{dcases*}
 ``` 
@@ -478,7 +478,7 @@ fee of current semester. We can write a function to describe it
 mathematically.
 
 ``` 
-tftp(p, c)=egin{dcases*}
+tftp(p, c)=\begin{{dcases*}
         2	imes p + c & when `p > 1000`\n        p + c & otherwise
         end{dcases*}
 ``` 
@@ -573,7 +573,7 @@ given at the right side.
 
 The function that solves the problem is –
 ``` 
-getGrade(mark) = egin{dcases*}
+getGrade(mark) = \begin{{dcases*}
         1 & when `mark geq 90` and `mark leq 100`\n        2 & else when `mark geq 80`\n        3 & else when `mark geq 70`\n        4 & else when `mark geq 60`\n        5 & else when `mark geq 40`\n        6 & otherwise
         end{dcases*}
 ``` 
@@ -601,7 +601,7 @@ result instead of a numerical representation. If the function can
 generate result with letter grades directly, it will be definitely more
 understandable as shown here – 
 ``` 
-getGradeLetter(mark) = egin{dcases*}
+getGradeLetter(mark) = \begin{{dcases*}
         hbox{'A'} & when `mark geq 90` and `mark leq 100`\n        hbox{'B'} & else when `mark geq 80`\n        hbox{'C'} & else when `mark geq 70`\n        hbox{'D'} & else when `mark geq 60`\n        hbox{'E'} & else when `mark geq 40`\n        hbox{'F'} & otherwise
         end{dcases*}
 ``` 
@@ -660,7 +660,7 @@ prices for different item numbers are given at the right.
 
 The function that solves the problem is –
 ``` 
-{hbox{em getPrice}}({hbox{em item}}) = egin{dcases*}
+{hbox{em getPrice}}({hbox{em item}}) = \begin{{dcases*}
         60.00 & when {em item} `= 1`\n        80.00 & when {em item} `= 2`\n        100.50 & when {em item} `= 3`\n        130.75 & when {em item} `= 4`\n        85.00 & when {em item} `= 5`\n        15.25 & when {em item} `= 6`\n        20.00 & when {em item} `= 7`\n        15.00 & when {em item} `= 8`\n        0 & otherwise 
         end{dcases*}
 ``` 
@@ -760,12 +760,12 @@ complex numbers, etc.. We need to define natural number. Here is the
 plain definition - `0` is a natural number and `n+1` is a natural number
 if `n` is a natural number. We can use it to write a function to know
 whether a number is natural –
-``` {hbox{em isNatural}}(x)=egin{dcases*}
+``` {hbox{em isNatural}}(x)=\begin{{dcases*}
         {hbox{em true}}& when `x=0`\n        {hbox{em false}}& when `x<0`\n        {hbox{em isNatural}}(x-1) & otherwise
         end{dcases*}``` 
 
 Similarly we can write another function to distinguish an animal as
-human – ``` {hbox{em isHuman}}(x)=egin{dcases*}
+human – ``` {hbox{em isHuman}}(x)=\begin{{dcases*}
         {hbox{em true}}& when `x=` {em Adam}\n        {hbox{em true}}& when `x=` {em Eve}\n        {hbox{em false}}& when `x=` {em Amoeba}\n        {hbox{em isHuman}}({hbox{em mother of }}x) & otherwise
         end{dcases*}``` 
 
@@ -931,7 +931,7 @@ as the induction hypothesis.
 
 Now our function looks like –
 ``` 
-{hbox{em fibonacci}}(x)=egin{dcases*}
+{hbox{em fibonacci}}(x)=\begin{{dcases*}
         0 & when `x=0`\n        1 & when `x=1`\n        {hbox{em fibonacci}}(x-1) + {hbox{em fibonacci}}(x-2) & otherwise
         end{dcases*}
 ``` 
@@ -953,7 +953,7 @@ Obviously, the code for the above function is –
 ------------
 
 ``` 
-{hbox{em add}}(x,y)=egin{dcases*}
+{hbox{em add}}(x,y)=\begin{{dcases*}
         x & when `y=0`\n        suc({hbox{em add}}(x,y-1)) & otherwise
         end{dcases*}
 ``` 
@@ -982,7 +982,7 @@ division of two numbers by using only subtraction.
 `sum_{i=1}^ni^4 = 1^4 + 2^4 + ldots + n^4` 
 can be rewritten as – 
 ``` 
-{hbox{em sumOfQuad}}(n)=egin{dcases*}
+{hbox{em sumOfQuad}}(n)=\begin{{dcases*}
         1 & when `n=1`\n        {hbox{em exp}}(n,4) + {hbox{em sumOfQuad}}(n-1) & otherwise
         end{dcases*}
 ```
@@ -1003,7 +1003,7 @@ A similar, in fact, more generalized series is –
 `sum_{i=1}^ni^k = 1^k + 2^k + ldots + n^k` It can be rewritten as –
 
 ``` 
-{hbox{em sumOfPow}}(n,k)=egin{dcases*}
+{hbox{em sumOfPow}}(n,k)=\begin{{dcases*}
         1 & when `n=1`\n        {hbox{em exp}}(n,k) + {hbox{em sumOfPow}}(n-1,k) & otherwise
         end{dcases*}
 ``` 
@@ -1030,7 +1030,7 @@ changing the base case result and by replacing `+` by `	imes` in the
 recursion part. Obviously, we should change the name of the function.
 
 ``` 
-{hbox{em prodOfPow}}(n,k)=egin{dcases*}
+{hbox{em prodOfPow}}(n,k)=\begin{{dcases*}
         1 & when `n=1`\n        {hbox{em exp}}(n,k) 	imes {hbox{em prodOfPow}}(n-1,k) & otherwise
         end{dcases*}
 ``` 
@@ -1125,7 +1125,7 @@ the number of possible ways to reach the goal can be determined by
 adding that of those two cells. So, our function is as follows:
 
 ``` 
-{hbox{em ways}}(x,y)=egin{dcases*}
+{hbox{em ways}}(x,y)=\begin{{dcases*}
         1 & when `x=0` or `y=0`\n        ways(x-1,y)+ways(x,y-1) & otherwise\n        end{dcases*}
 ``` 
 
