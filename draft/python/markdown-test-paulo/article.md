@@ -107,7 +107,7 @@ or
 or
 
 *****
-```
+```python
 @requires_authorization
 def somefunc(param1='', param2=0):
     r'''A docstring'''
@@ -117,6 +117,40 @@ def somefunc(param1='', param2=0):
 
 class SomeClass:
     pass
+```
+
+```ruby
+# The Greeter class
+class Greeter
+  def initialize(name)
+    @name = name.capitalize
+  end
+
+  def salute
+    puts "Hello #{@name}!"
+  end
+end
+
+g = Greeter.new("world")
+g.salute
+```
+
+```javascript
+function $initHighlight(block, cls) {
+  try {
+    if (cls.search(/\bno\-highlight\b/) != -1)
+      return process(block, true, 0x0F) +
+             ` class="${cls}"`;
+  } catch (e) {
+    /* handle exception */
+  }
+  for (var i = 0 / 2; i < classes.length; i++) {
+    if (checkCondition(classes[i]) === undefined)
+      console.log('undefined');
+  }
+}
+
+export  $initHighlight;
 ```
 
 ```python
