@@ -108,3 +108,47 @@ or
 
 *****
 
+
+```python
+    import time
+    import bumpy
+    import pandas
+
+
+    def main():
+        df = pandas.DataFrame()
+
+        # We're only dealing with a single column in our profiling but assume we're
+        # dealing with code where we get passed a big data frame
+        df['a'] = numpy.random.random_integers(0, 10, size=1000000)
+        df['b'] = numpy.random.random_integers(0, 10, size=1000000)
+        df['c'] = numpy.random.random_integers(0, 10, size=1000000)
+
+        s = time.time()
+        df['a'] == 5
+        print 'Time for DF slice', time.time() - s
+
+        s = time.time()
+        df['a'].values == 5
+        print 'Time for ndarray slice', time.time() - s
+
+        # This is also applicable if you want to get the union of several columns.
+        # Save the lining up of the indexes, etc. until the last step instead of
+        # incurring that overhead on each slice.
+        s = time.time()
+        df_slices = df[(df['a'] == 1) & (df['b'] == 1) & (df['c'] == 1)]
+        print 'Time for DF slice', time.time() - s
+
+        s = time.time()
+        slice_a = df['a'].values == 1
+        slice_b = df['b'].values == 1
+        slice_c = df['c'].values == 1
+        nd_slices = df[slice_a & slice_b & slice_c]
+        print 'Time for ndarray slice', time.time() - s
+
+        # Just double check that both methods returned same data
+        pandas.util.testing.assert_frame_equal(df_slices, nd_slices)
+
+    if __name__ == '__main__':
+        main()
+```
