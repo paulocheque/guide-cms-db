@@ -1,7 +1,7 @@
 ### This does not work?
 
 ```python
-	def lowerfirst(string):
+def lowerfirst(string):
 	"""
 	This function takes an input string, and if the string is equal to the word I, it will simply return that word.
 	This function takes an input string, and if the string is equal to the word I, it will simply return that word
@@ -23,7 +23,7 @@
 ### This does work:
 
 ```python
-	def lowerfirst(string):
+def lowerfirst(string):
 	"""
 	This function takes an input string, and if the string is equal to the word I, it will simply return that word.
 	This function takes an input string, and if the string is equal to the word I, it will simply return that word
