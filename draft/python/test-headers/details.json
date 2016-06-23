@@ -3,7 +3,12 @@
     "author_name": "paulocheque",
     "author_real_name": "Paulo Cheque",
     "branch": "master",
-    "branches": [],
+    "branches": [
+        [
+            "durden",
+            "durden-python-test-headers"
+        ]
+    ],
     "filename": "article.md",
     "first_commit": "47a9dd3f07e2c63b1b9910e5efc2f3459e44644c",
     "image_url": "https://avatars.githubusercontent.com/u/94350?v=3",
