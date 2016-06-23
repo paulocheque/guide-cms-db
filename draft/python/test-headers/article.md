@@ -63,11 +63,7 @@ def lowerfirst(string):
     
     WARNING: This will break if the word given is only 1 letter long and not equal to I
     """
-    
-    """
-    fix this markdown hates python docstrings, so I have to do this to fix it in the meantime
-    """
-    
+
     
     if string == "I":
         return string
@@ -108,10 +104,6 @@ For example:
 
     """
     
-    """
-    fix this markdown hates python docstrings, so I have to do this to fix it in the meantime
-    """
-    
     
     if string == "I":
         return string
@@ -138,10 +130,6 @@ def lowerfirst(string):
     Returns:
         tmp (str): The string processed and lowered as necessary
     
-    """
-    
-    """
-    fix this markdown hates python docstrings, so I have to do this to fix it in the meantime
     """
     
     
