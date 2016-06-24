@@ -1,0 +1,15 @@
+{
+    "_publish_status": "draft",
+    "author_name": "paulocheque",
+    "author_real_name": "Paulo Cheque",
+    "branch": "master",
+    "branches": [],
+    "filename": "article.md",
+    "first_commit": "355dbc6828c141c5d905141fbb2b64cef1a18c00",
+    "image_url": "https://avatars.githubusercontent.com/u/94350?v=3",
+    "stacks": [
+        "Python"
+    ],
+    "thumbnail_url": null,
+    "title": "Faster single column slicing with DataFrames"
+}
