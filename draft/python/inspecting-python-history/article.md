@@ -1,7 +1,4 @@
-One of the awesome things about a project like [Python](http://python.org) being
-open source is that anyone can go look at the code and find a 'paper' trail
-detailing the reasons for almost every line of code. I personally don't take
-advantage of this enough.
+One of the awesome things about a project like [Python](http://python.org) being open source is that anyone can go look at the code and find a 'paper' trail detailing the reasons for almost every line of code. I personally don't take advantage of this enough.
 
 Recently I stumbled across a great opportunity to dive into the
 [source](http://hg.python.org/cpython). The source is a great way to to track
