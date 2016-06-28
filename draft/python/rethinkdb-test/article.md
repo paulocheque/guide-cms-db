@@ -98,9 +98,10 @@ In the HTML, you want to put the following Code:
     <title>Collaborative Editor</title>
   </head>
   <body>
-    <textarea id="editor"></textarea>
+    <textarea id="editor2"></textarea>
      
     <script src="/bower_components/codemirror/lib/codemirror.js"></script>
+    <link rel="stylesheet" href="/bower_components/codemirror/lib/codemirror.css">
     <script src="/bower_components/codemirror/mode/javascript/javascript.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
