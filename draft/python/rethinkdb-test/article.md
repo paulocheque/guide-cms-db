@@ -91,30 +91,7 @@ By now, you're ready to use the technologies that we have installed. First, we n
 
 In the HTML, you want to put the following Code:
 
-```html
-<!doctype html>
-<html>
-  <head>
-    <title>Collaborative Editor</title>
-  </head>
-  <body>
-    <textarea id="editor2"></textarea>
-     
-    <script src="/bower_components/codemirror/lib/codemirror.js"></script>
-    <link rel="stylesheet" href="/bower_components/codemirror/lib/codemirror.css">
-    <script src="/bower_components/codemirror/mode/javascript/javascript.js"></script>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-    
-    <script>
-        var myCodeMirror = CodeMirror.fromTextArea(document.getElementById("editor"), {
-            lineNumbers: true,
-            mode: "javascript"
-        });
-    </script>
-  </body>
-</html>
-```
+
 
 The code block above is going to be the basis for the editor's HTML page. In the block, we create a text area with an ID of the editor that we can refer to later. Below this, we include all of the javascript files that we want to use. These include files for CodeMirror, Socket.IO (which will be served by Socket.IO itself), and jQuery. We then initialize the CodeMirror editor, with which the user will interact. 
 
