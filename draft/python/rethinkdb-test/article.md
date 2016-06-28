@@ -91,7 +91,30 @@ By now, you're ready to use the technologies that we have installed. First, we n
 
 In the HTML, you want to put the following Code:
 
-
+```html
+<!doctype html>
+<html>
+  <head>
+    <title>Collaborative Editor</title>
+  </head>
+  <body>
+    <textarea id="editor"></textarea>
+     
+    <script src="/bower_components/codemirror/lib/codemirror.js"></script>
+    <link rel="stylesheet" href="/bower_components/codemirror/lib/codemirror.css">
+    <script src="/bower_components/codemirror/mode/javascript/javascript.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    
+    <script>
+        var myCodeMirror = CodeMirror.fromTextArea(document.getElementById("editor"), {
+            lineNumbers: true,
+            mode: "javascript"
+        });
+    </script>
+  </body>
+</html>
+```
 
 The code block above is going to be the basis for the editor's HTML page. In the block, we create a text area with an ID of the editor that we can refer to later. Below this, we include all of the javascript files that we want to use. These include files for CodeMirror, Socket.IO (which will be served by Socket.IO itself), and jQuery. We then initialize the CodeMirror editor, with which the user will interact. 
 
@@ -338,6 +361,14 @@ html, body {
 }
 ```
 
+Replace `<textarea id="editor"></textarea>` in `index.html` with the following code:
+
+```html
+<div id="editor-wrapper">
+    <span class="cuser">Current User: </span><span id="username"></span><br>
+    <textarea id="editor"></textarea>    
+</div>
+```
 
 Add the following javascript to the script section of `index.html`:
 
@@ -462,7 +493,7 @@ Here is `index.html`:
   <body>
       <div id="editor-wrapper">
         <span class="cuser">Current User: </span><span id="username"></span><br>
-
+        <textarea id="editor"></textarea>    
       </div>
     <script src="/bower_components/codemirror/lib/codemirror.js"></script>
     <link rel="stylesheet" href="/bower_components/codemirror/lib/codemirror.css">
@@ -537,3 +568,4 @@ I hope this tutorial piques your interest, and you can go off and make amazing a
 ![Shannon Duncan](https://pbs.twimg.com/profile_images/672481536826937344/GeAx6xl4_200x200.jpg) 
 
 Shannon Duncan is an Author at [Unrestricted Coding](http://unrestrictedcoding.com). He mentors and teaches people of all ages how to code and enjoy the art of programming. Find him on [twitter](https://twitter.com/TheUCofficial), [linked-in](https://www.linkedin.com/in/jsduncan98), and [github](https://github.com/shadowcodex).
+
