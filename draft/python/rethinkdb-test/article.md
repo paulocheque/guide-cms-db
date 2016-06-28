@@ -338,14 +338,6 @@ html, body {
 }
 ```
 
-Replace `<textarea id="editor222"></textarea>` in `index.html` with the following code:
-
-```html
-<div id="editor-wrapper">
-    <span class="cuser">Current User: </span><span id="username"></span><br>
-    <textarea id="editor22222"></textarea>    
-</div>
-```
 
 Add the following javascript to the script section of `index.html`:
 
