@@ -462,7 +462,7 @@ Here is `index.html`:
   <body>
       <div id="editor-wrapper">
         <span class="cuser">Current User: </span><span id="username"></span><br>
-        <textarea id="editor"></textarea>    
+
       </div>
     <script src="/bower_components/codemirror/lib/codemirror.js"></script>
     <link rel="stylesheet" href="/bower_components/codemirror/lib/codemirror.css">
