@@ -101,7 +101,6 @@ In the HTML, you want to put the following Code:
     <textarea id="editor"></textarea>
      
     <script src="/bower_components/codemirror/lib/codemirror.js"></script>
-    <link rel="stylesheet" href="/bower_components/codemirror/lib/codemirror.css">
     <script src="/bower_components/codemirror/mode/javascript/javascript.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
