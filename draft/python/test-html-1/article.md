@@ -7,7 +7,6 @@
     <title>Collaborative Editor</title>
   </head>
   <body>
-    <textarea id="editor2"></textarea>
      
     <script src="/bower_components/codemirror/lib/codemirror.js"></script>
     <link rel="stylesheet" href="/bower_components/codemirror/lib/codemirror.css">
